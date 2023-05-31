@@ -1,0 +1,190 @@
+body {
+  background-color: #B0E0E6;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+/* Home Screen */
+.home-screen-img, .character-screen-img, congrats-screen-img {
+  height: 100%;
+  display: block;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.game-container {
+  position: relative;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 321px;
+  left: 360px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  color: white;
+  background: transparent;
+  border: none !important;
+  transition: all 250ms; /* Zoom in */
+}
+
+.play-button:hover {
+  transform: scale(1.10);
+}
+
+.coin {
+  position: absolute;
+  width: 200px;
+  top: 50px;
+}
+
+.jump {
+  position: absolute;
+  top: 100px;
+  left: 350px;
+}
+
+.mario1 {
+  position: absolute;
+  top: 335px;
+  left: 230px;
+  height: 150px;
+  width: 140px;
+}
+
+.luigi1 {
+  position: absolute;
+  top: 335px;
+  left: 294px;
+  height: 128px;
+  width: 80px;
+}
+
+.mario2 {
+  position: absolute;
+  top: 320px;
+  left: 225px;
+  height: 150px;
+  width: 140px;
+  z-index: 10;
+  animation-duration: 8s;
+  animation-name: goRight;
+  animation-iteration-count: infinite;
+}
+@keyframes goRight {
+  from {
+    transform: translate(0,0);
+  }
+
+  to {
+    transform: translate(1920px,0);
+  }
+}
+
+/* Character Screen */
+.pick-characters {
+  width: 300px;
+  position: absolute;
+  left: 300px;
+  top: 200px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.characters {
+  background-color: white;
+  width: 90px;
+  height: 110px;
+  padding: 13px;
+  border-radius: 25px;
+  transition: all 250ms
+}
+
+.character-title {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  position: absolute;
+  top: 100px;
+  left: 240px;
+  font-size: 20px;
+}
+
+h3 {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+}
+
+.characters:hover {
+  transform: scale(1.10);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-container {
+  position: relative;
+  height: 500px;
+  width: 850px;
+  margin: 0 auto;
+}
+
+board {
+  display: none;
+}
+
+.challenge-title {
+  position: absolute;
+  top: -55px;
+  left: 155px;
+  font-family: 'Press Start 2P', cursive;
+  color: brown;
+  font-size: 21px;
+  width: 1000px;
+}
+
+/* Game Two Items */
+
+
+.hidden {
+  position: absolute;
+  top: 77px;
+  left: 407px;
+  height: 91%;
+  transition: all 250ms
+}
+
+.hidden:hover {
+  transform: scale(1.10);
+cursor: pointer;
+}
+
+.bush-button {
+  position: absolute;
+ background: transparent;
+  border: none !important;
+}
+
+.block {
+  position: absolute;
+  height: 20%;
+  top: 100px;
+  left: 500px;
+cursor: pointer;
+
+}
+
+.cloud {
+  position: absolute;
+  height: 23%;
+  top: 90px;
+  left: 100px;
+cursor: pointer;
+
+}
+
+.bush {
+  top: 219px;
+  left: 139px;
+cursor: pointer;
+}

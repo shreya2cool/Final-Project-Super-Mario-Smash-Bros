@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  
+  <div class="main-container">
+  
+  <h1 class="challenge-title"> Goal: Find the Hidden Button</h1>
+  <img class="character-screen-img" src="character-screen.png">
+
+<!-- Images in game -->
+
+  <a href="game-over-screen.html"> <img class="block" src="https://66.media.tumblr.com/0caee7e4146a8a74e6a740d656ecb85d/tumblr_mnakva6Dds1rfjowdo1_500.gif"> </a>
+
+  <a href="game-over-screen.html"> <img class="cloud" src="https://www.nicepng.com/png/full/164-1648733_creature-clip-art-freeuse-stock-super-mario-clouds.png"> </a>
+
+  <button id="show-image-button" class="bush-button bush"> <img src="https://lh3.googleusercontent.com/JHLnXVWrx3ejnEDctdi-2NasrKJNz-03N3oooms_r50J9Q1WyIyICwS9KmBjUSW5iQiBRU7taNcm_GFKCQ3-=s400"> </button>
+
+  <img class="mario1" src="https://media1.giphy.com/media/12oufCB0MyZ1Go/200w.gif?cid=82a1493bi5gly67ab1incjof5z6dxyj7nt7yp7fmy7gtuq63&rid=200w.gif&ct=s">
+
+   <a href="congrats-screen.html"> <img id="my-image" class="hidden" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ea231e53-e17c-4265-83b5-552457fc0505/d8cwhr7-14899b4f-4f78-455e-a345-43e756a84af1.png/v1/fill/w_410,h_350/peach_s_castle_mk7__super_mario_64_version__update_by_banjo2015_d8cwhr7-350t.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDM0IiwicGF0aCI6IlwvZlwvZWEyMzFlNTMtZTE3Yy00MjY1LTgzYjUtNTUyNDU3ZmMwNTA1XC9kOGN3aHI3LTE0ODk5YjRmLTRmNzgtNDU1ZS1hMzQ1LTQzZTc1NmE4NGFmMS5wbmciLCJ3aWR0aCI6Ijw9NTA5In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.iY_uA4QyXkqR4bMNFsJxxRZFp6Ts7gO2yoKw2nsSS2U"> </a>
+
+  
+<!-- Game Two's CSS -->
+<style>
+.hidden {
+display: none; 
+}
+
+.visible {
+display: block;
+}
+</style>
+
+    
+<!-- Game Two's JavaScript -->
+<script>
+const showImageButton = document.getElementById("show-image-button");
+const myImage = document.getElementById("my-image");
+showImageButton.addEventListener("click", () => { 
+myImage.classList.toggle("visible"); 
+});
+</script>
+    
+<script type="text/javascript" src="script.js"></script>
+  
+</body> 
+</html>
